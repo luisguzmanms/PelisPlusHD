@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lovedise:permissiongen:0.0.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c87fba8277a4eff038cc27af75788e36/jetified-permissiongen-0.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c87fba8277a4eff038cc27af75788e36/jetified-permissiongen-0.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c87fba8277a4eff038cc27af75788e36/jetified-permissiongen-0.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8edc2dd54563c74082420b29350b92ef/jetified-permissiongen-0.0.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8edc2dd54563c74082420b29350b92ef/jetified-permissiongen-0.0.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8edc2dd54563c74082420b29350b92ef/jetified-permissiongen-0.0.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22a71e74a3455d918f4d4f79026edfb4/jetified-permissiongen-0.0.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22a71e74a3455d918f4d4f79026edfb4/jetified-permissiongen-0.0.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22a71e74a3455d918f4d4f79026edfb4/jetified-permissiongen-0.0.6/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lovedise/permissiongen/0.0.6/426b820a47d1196956bf3401a186773add63f732/permissiongen-0.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lovedise/permissiongen/0.0.6/ab1509001fcda56be4f4ca1510ad23a5b1865f57/permissiongen-0.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

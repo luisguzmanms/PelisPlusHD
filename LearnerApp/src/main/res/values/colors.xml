@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="learn_colorPrimary">#345FFB</color> <!-- 345FFB -->
+    <color name="learn_colorPrimaryDark">#1D232B</color>
+    <color name="learn_colorAccent">#FF4FACFE</color>
+    <color name="learn_colorPrimary_light">#03A9F4</color>
+
+
+
+    <color name="learn_textColorPrimary">#38475B</color>
+    <color name="learn_textColorSecondary">#C4CFDC</color>
+    <color name="learn_textColorThird">#CBD8DC</color>
+    <color name="learn_textColorGrey">#B4BBC2</color>
+
+    <color name="learn_white">#ffffff</color>
+    <color name="learn_semi_white">#F8F7F7</color>
+    <color name="learn_black">#000000</color>
+    <color name="learn_view_color">#eaeaea</color>
+    <color name="learn_transparent">#00000000</color>
+    <color name="learn_gradient_grey_1">#F0F0F5</color>
+    <color name="learn_gradient_grey_2">#F7F8FA</color>
+    <color name="learn_layout_background">#F6F7FA</color>
+    <color name="learn_green">#18CF18</color>
+    <color name="learn_light_green">#62EE7A</color>
+    <color name="learn_light_pink">#FC66E4</color>
+    <color name="learn_light_red">#FD6C7C</color>
+    <color name="learn_yellow">#FBC02D</color>
+    <color name="learn_mustard">#FFA000</color>
+    <color name="learn_light_sky_blue">#549AFC</color>
+    <color name="learn_color_light_yellow">#fff1c2</color>
+    <color name="learn_mettal_grey">#ccd5e1</color>
+    <color name="learn_color_musturd_yellow">#FFD75A</color>
+
+    <color name="learn_orange_light">#FE9778</color>
+    <color name="learn_orange_dark">#Fd6f6D</color>
+    <color name="learn_purple">#cd34fa</color>
+    <color name="learn_star_yellow">#FFA000</color>
+    <color name="learn_white_trans">#51FFFFFF</color>
+
+
+
+    <color name="fondo_blancoazul">#1D232B</color> <!-- edf2fa -->
+    <color name="fondo_blank">#1d232d </color> <!-- 1D232B -->
+    <color name="fondo_black2">#323742</color> <!-- 23282C -->
+
+
+
+
+    <color name="buttonBg">#CCCCCC</color>
+    <color name="buttonTextColor">#000000</color>
+
+    <color name="controller_bg_dark">#66000000</color>
+    <color name="controller_bg_light">#00000000</color>
+
+    <color name="edit_base_line_color">#77ffffff</color>
+
+
+    <!-- PALETA AZUL CLARO -->
+
+    <color name="paleta_azul_claro_0">#FF4FACFE</color>
+    <color name="paleta_azul_claro_1">#FF4AB0FE</color>
+    <color name="paleta_azul_claro_2">#FF3CBDFE</color>
+    <color name="paleta_azul_claro_3">#FF24D2FE</color>
+    <color name="paleta_azul_claro_4">#FF00F2FE</color>
+
+
+
+
+
+
+
+</resources>

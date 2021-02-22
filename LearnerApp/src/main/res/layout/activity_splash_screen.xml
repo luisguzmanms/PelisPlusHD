@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/fondo_blank">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/shape_controller_bottom_gradient" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/shape_controller_bottom_gradient" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/shape_controller_bottom_gradient" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardBackgroundColor="@color/fondo_black2"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_recat_black"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/icon_sinfondo" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvAppName"
+            style="@style/LearnerFontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvDestacado"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/josefinsans_semibold"
+            android:gravity="center"
+            android:text="PPLUS"
+            android:textColor="@color/learn_gradient_grey_1"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAppName2"
+            style="@style/LearnerFontBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvDestacado"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/josefinsans_semibold"
+            android:gravity="center"
+            android:text="PelisPlusHD"
+            android:textColor="@color/edit_base_line_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_appversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/amiko"
+            android:gravity="center"
+            android:text="version"
+            android:textColor="@color/learn_mettal_grey" />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spinKitView2"
+            style="@style/Wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            app:SpinKit_Color="@color/learn_colorPrimary"
+            app:SpinKit_Style="MultiplePulseRing" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_creador"
+        style="@style/LearnerAppTheme.PopupOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/convergence"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="For you with love :)"
+        android:textColor="@color/learn_mettal_grey"
+        android:textSize="16sp" />
+
+</RelativeLayout>

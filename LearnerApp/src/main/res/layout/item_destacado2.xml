@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/learn_shadoe_oscuro2"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewDestacado"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/learn_shadoe_oscuro2"
+        android:focusable="true"
+        app:cardCornerRadius="8dp">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fondo_black2"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_top_gradient" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_bottom_gradient" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_bottom_gradient" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_bottom_gradient" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_bottom_gradient" />
+
+            <ImageView
+                android:id="@+id/imgFondoDestacado7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shape_controller_bottom_gradient" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardviewFilm"
+                    android:layout_width="122dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/learn_shadow_edittext_oscuro2"
+                    app:cardBackgroundColor="@color/fondo_black2"
+                    app:cardCornerRadius="@dimen/learn_spacing_middle"
+                    app:cardElevation="10dp">
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/spinKitView2"
+                        style="@style/Wrap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:SpinKit_Color="@color/learn_colorPrimary"
+                        app:SpinKit_Style="FadingCircle" />
+
+                    <ImageView
+                        android:id="@+id/imgPrincipalDestacado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:id="@+id/tvTituloDestacado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="..."
+                    android:textColor="@color/learn_gradient_grey_1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/learn_black"
+    tools:context=".mesa.act_add_episodio">
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/id_mainScroll_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_blank"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        tools:context=".OseanProfile">
+
+    <!-- main layout -->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_blank"
+        tools:ignore="ScrollViewSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/learn_spacing_middle"
+
+            android:background="@color/fondo_blank"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:id="@+id/ivIdFilmBuscar"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="ID episodio (Temporada y episodio)"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etIdFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="x01234p"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Nombre episodio"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etNombreFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Nombre film"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Sipnosis"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etSipnosisFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Sipnosis"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Tipo"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etTipoFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Tipo"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Calidad"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etCalidadFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Calidad"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Categoria - Genero"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etCategoriaFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Categoria - Genero"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Año"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etAnoFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Año"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Puntaje"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etPuntajeFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Puntaje"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Imagen"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etImagenFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Imagen"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Estado"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etEstadoFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Estado"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_control">
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/learn_shadoe_oscuro"
+                    android:padding="@dimen/_13sdp"
+                    android:src="@drawable/learn_ic_key"
+                    android:tint="@color/learn_green" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:text="Red        "
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_textColorPrimary"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/etRedFilm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/learn_spacing_standard"
+                        android:layout_marginEnd="@dimen/learn_spacing_middle"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/learn_ic_arrow_right"
+                        android:drawableTint="@color/learn_textColorThird"
+                        android:gravity="center_vertical"
+                        android:hint="Red"
+                        android:padding="10dp"
+                        android:textAppearance="@style/LearnerFontMedium"
+                        android:textColor="@color/learn_mettal_grey"
+                        android:textColorHint="@color/edit_base_line_color"
+                        android:textSize="@dimen/learn_font_size_normal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:background="@color/learn_gradient_grey_1" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnviarFilm"
+                style="@style/LearnerMaterialButtonStyle.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="@dimen/learn_spacing_xlarge"
+                android:paddingEnd="@dimen/learn_spacing_xlarge"
+                android:text="ENVIAR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDestacarFilm"
+                style="@style/LearnerMaterialButtonStyle.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="@dimen/learn_spacing_xlarge"
+                android:paddingEnd="@dimen/learn_spacing_xlarge"
+                android:text="DESTACAR"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEliminarFilm"
+                style="@style/LearnerMaterialButtonStyle.Filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="@dimen/learn_spacing_xlarge"
+                android:paddingEnd="@dimen/learn_spacing_xlarge"
+                android:text="ELIMINAR"
+                app:backgroundTint="@color/learn_orange_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

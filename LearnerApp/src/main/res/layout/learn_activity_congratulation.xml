@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/learn_bg_gradient_badge"
+    tools:context=".activities.LearnCongratulationActivity">
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/llInfo"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivMedal"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/learn_ic_crown"
+            android:layout_marginStart="@dimen/learn_spacing_medium"
+            android:paddingTop="@dimen/learn_spacing_control_half"
+            android:padding="@dimen/learn_spacing_standard_new"
+            android:background="@drawable/learn_bg_circle_white"
+            android:backgroundTint="@color/learn_purple"
+            />
+
+        <TextView
+            android:id="@+id/tvAchievementName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/learn_white"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/learn_spacing_xlarge"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textSize="40sp"
+            android:text="@string/learn_lbl_congrats"/>
+
+        <TextView
+            android:id="@+id/tvAchievementComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/learn_spacing_control"
+            android:text="@string/learn_lbl_you_unlocked_a_new_badge"
+            android:textColor="@color/learn_white"
+            android:textSize="@dimen/learn_font_size_normal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/LearnerMaterialButtonStyle.Filled"
+            app:strokeColor="@color/learn_colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/learn_white"
+            android:textColor="@color/learn_colorPrimary"
+            android:layout_marginTop="@dimen/learn_spacing_large"
+            android:paddingStart="@dimen/learn_spacing_standard_new"
+            android:paddingEnd="@dimen/learn_spacing_standard_new"
+            android:text="@string/learn_lbl_awesome" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/learn_spacing_control"
+        android:layout_alignParentBottom="true"
+        android:tint="@color/learn_white"
+        android:layout_marginStart="@dimen/learn_spacing_middle"
+        android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+        android:src="@drawable/learn_ic_upload"/>
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/learn_spacing_control"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:tint="@color/learn_white"
+        android:layout_marginEnd="@dimen/learn_spacing_middle"
+        android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+        android:src="@drawable/learn_ic_cup_new"/>
+
+</RelativeLayout>

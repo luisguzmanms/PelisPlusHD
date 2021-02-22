@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/amiko</item>
+        <item>@font/bungee</item>
+        <item>@font/convergence</item>
+        <item>@font/quando</item>
+        <item>@font/ramabhadra</item>
+        <item>@font/sniglet</item>
+        <item>@font/syncopate</item>
+    </array>
+</resources>

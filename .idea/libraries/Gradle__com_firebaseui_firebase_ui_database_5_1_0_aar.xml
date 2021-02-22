@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.firebaseui:firebase-ui-database:5.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c59720647f88d4cbf364fbc58c20c325/jetified-firebase-ui-database-5.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c59720647f88d4cbf364fbc58c20c325/jetified-firebase-ui-database-5.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c59720647f88d4cbf364fbc58c20c325/jetified-firebase-ui-database-5.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c92a3d53b7f3b9b97a5211f0deb8fbe9/jetified-firebase-ui-database-5.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c92a3d53b7f3b9b97a5211f0deb8fbe9/jetified-firebase-ui-database-5.1.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c92a3d53b7f3b9b97a5211f0deb8fbe9/jetified-firebase-ui-database-5.1.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0212ee2cccf9f5d663836336915769df/jetified-firebase-ui-database-5.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0212ee2cccf9f5d663836336915769df/jetified-firebase-ui-database-5.1.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0212ee2cccf9f5d663836336915769df/jetified-firebase-ui-database-5.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-database/5.1.0/53b11645a299ff49eb8d5faf81f3d1c4150d9822/firebase-ui-database-5.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-database/5.1.0/28b6c33b72ed41ce195e27b229c1de30986fe56a/firebase-ui-database-5.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

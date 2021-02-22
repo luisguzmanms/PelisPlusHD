@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lamesa.netfilms">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!--
+      This permission is optional but recommended so events will
+      contain information about bluetooth state
+    -->
+
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
+
+
+    <application
+        android:name="com.lamesa.netfilms.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <meta-data android:name="io.sentry.dsn" android:value="https://key@sentry.io/123" />
+
+            <meta-data
+                android:name="firebase_performance_logcat_enabled"
+                android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3040756318290255~8298479348"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+
+        <activity
+            android:name="com.lamesa.netfilms.activity.splash"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name="com.lamesa.netfilms.activity.act_main"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity android:name="com.lamesa.netfilms.mesa.act_episodio"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity android:name="com.lamesa.netfilms.mesa.act_add_film"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"></activity>
+
+
+        <activity android:name="com.lamesa.netfilms.mesa.act_add_episodio"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity android:name="com.lamesa.netfilms.activity.act_film"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize"></activity>
+
+        <activity
+            android:name="com.lamesa.netfilms.activity.act_webview"
+            android:screenOrientation="landscape"
+            android:hardwareAccelerated="true"
+
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/LearnerAppTheme" />
+
+        <activity
+            android:name="com.lamesa.netfilms.video.WindowVideoViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/LearnerAppTheme"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lamesa.netfilms.video.FloatWindowActivity"
+            android:launchMode="singleTask"
+            android:hardwareAccelerated="true"
+            android:theme="@style/LearnerAppTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+
+
+        <service android:name=".service.fcm"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

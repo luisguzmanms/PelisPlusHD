@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.eightbitlab:bottomnavigationbar:0.9.6@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6d52d678645506b0bc05f84ed988bd4/jetified-bottomnavigationbar-0.9.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6d52d678645506b0bc05f84ed988bd4/jetified-bottomnavigationbar-0.9.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6d52d678645506b0bc05f84ed988bd4/jetified-bottomnavigationbar-0.9.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b96bcfd2ad444328931a8cf9a1afdb10/jetified-bottomnavigationbar-0.9.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b96bcfd2ad444328931a8cf9a1afdb10/jetified-bottomnavigationbar-0.9.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b96bcfd2ad444328931a8cf9a1afdb10/jetified-bottomnavigationbar-0.9.6/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e04f1a1b642e9c7af28242bd72f699f1/jetified-bottomnavigationbar-0.9.6/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e04f1a1b642e9c7af28242bd72f699f1/jetified-bottomnavigationbar-0.9.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e04f1a1b642e9c7af28242bd72f699f1/jetified-bottomnavigationbar-0.9.6/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.eightbitlab/bottomnavigationbar/0.9.6/7a7a28d4b43eb49c67190a9140569523563d2c49/bottomnavigationbar-0.9.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.eightbitlab/bottomnavigationbar/0.9.6/3d9ca7c0fc855bcf4e2e9f492ee83d355950d23d/bottomnavigationbar-0.9.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.LearnerDashboardActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintTop"
+        android:background="@drawable/learn_bg_bottom_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <EditText
+                android:drawableStart="@drawable/learn_ic_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTint="@color/learn_colorPrimary"
+                android:paddingEnd="@dimen/learn_spacing_standard"
+                android:drawablePadding="@dimen/learn_spacing_standard_new"
+                android:hint="@string/learn_hint_search"
+                android:textAppearance="@style/LearnerFontMedium"
+                android:textSize="@dimen/learn_font_size_large"
+                android:paddingStart="@dimen/learn_spacing_standard_new"
+                android:background="@null" />
+
+            <TextView
+                android:id="@+id/tvFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/learn_lbl_filter"
+                android:textStyle="bold"
+                android:layout_toStartOf="@id/tvClear"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/learn_spacing_control"
+                android:textAppearance="@style/LearnerFontSemiBold"
+                android:textColor="@color/learn_colorPrimary"
+                android:textSize="@dimen/learn_font_size_large" />
+
+            <ImageView
+                android:id="@+id/tvClear"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/learn_textColorSecondary"
+                android:padding="@dimen/learn_spacing_control"
+                android:src="@drawable/learn_ic_close_black" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/llFilterLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/learn_colorPrimary">
+            <ImageView
+                android:id="@+id/tvCloseFilter"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/learn_spacing_middle"
+                android:layout_marginTop="@dimen/learn_spacing_standard_new"
+                android:tint="@color/learn_white"
+                android:padding="@dimen/learn_spacing_control"
+                android:src="@drawable/learn_ic_close_black" />
+            <TextView
+                style="@style/LearnHeadingBig"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:textStyle="bold"
+                android:textColor="@color/learn_white"
+                android:text="@string/learn_lbl_filter" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/learn_spacing_standard"
+                android:padding="@dimen/learn_spacing_control_half"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:textSize="@dimen/learn_font_size_small"
+                android:textColor="@color/learn_gradient_grey_1"
+                android:textAppearance="@style/LearnerFontBold"
+                android:layout_marginEnd="@dimen/learn_font_size_large"
+                android:text="@string/learn_lbl_by_category" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategoryFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/learn_spacing_middle"
+                android:paddingBottom="@dimen/learn_spacing_standard_new"
+                android:paddingStart="@dimen/learn_spacing_middle"
+                android:paddingEnd="@dimen/learn_spacing_middle"
+                android:overScrollMode="never"
+                android:clipToPadding="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlHead"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/learn_spacing_standard"
+                android:padding="@dimen/learn_spacing_control_half"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:textSize="@dimen/learn_font_size_small"
+                android:textColor="@color/learn_gradient_grey_1"
+                android:textAppearance="@style/LearnerFontBold"
+                android:layout_marginEnd="@dimen/learn_font_size_large"
+                android:text="@string/learn_lbl_by_cost_range" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                android:layout_marginTop="@dimen/learn_spacing_middle">
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="50"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:thumb="@drawable/learn_seekbar_thumb"
+                    android:paddingStart="0dp"
+                    android:progressDrawable="@drawable/learn_seekbar_green"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/learn_font_size_xlarge"
+                    android:textColor="@color/learn_gradient_grey_1"
+                    android:textAppearance="@style/LearnerFontBold"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/learn_lbl__50" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/learn_bg_bottom_shadow"
+                android:layout_marginTop="@dimen/learn_spacing_large"
+                android:textColor="@color/learn_colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_minus4sdp"
+                android:textSize="@dimen/learn_font_size_normal"
+                android:textAppearance="@style/LearnerFontSemiBold"
+                android:text="@string/learn_lbl_apply"/>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingBottom="@dimen/_50sdp"
+          >
+          <TextView
+              android:id="@+id/tvMyCourse"
+              style="@style/LearnHeadingBig"
+              android:layout_marginStart="@dimen/learn_spacing_standard_new"
+              android:layout_marginTop="@dimen/learn_spacing_middle"
+              android:textStyle="bold"
+              android:text="@string/learn_lbl_top_instructors" />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rvPeoples"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="@dimen/learn_spacing_middle"
+              android:paddingBottom="@dimen/learn_spacing_standard_new"
+              android:paddingStart="@dimen/learn_spacing_middle"
+              android:paddingEnd="@dimen/learn_spacing_middle"
+              android:overScrollMode="never"
+              android:clipToPadding="false" />
+          <TextView
+              android:id="@+id/tvRecommended"
+              style="@style/LearnHeadingBig"
+              android:layout_marginStart="@dimen/learn_spacing_standard_new"
+              android:textStyle="bold"
+              android:text="@string/learn_lbl_recommended" />
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:id="@+id/rvRecommended"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="@dimen/learn_spacing_middle"
+              android:paddingBottom="@dimen/learn_spacing_standard_new"
+              android:paddingStart="@dimen/learn_spacing_middle"
+              android:paddingEnd="@dimen/learn_spacing_middle"
+              android:overScrollMode="never"
+              android:clipToPadding="false" />
+      </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

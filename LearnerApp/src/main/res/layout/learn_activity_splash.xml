@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/learn_white"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.LearnSplashActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_140sdp"
+        android:src="@drawable/learn_ic_prokit_logo" />
+
+    <TextView
+        style="@style/LearnHeadingBig"
+        android:text="@string/learn_lbl_Build_from_Prokit"
+        android:textSize="@dimen/learn_font_size_normal" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/learn_spacing_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+            android:padding="@dimen/learn_spacing_control"
+            android:text="@string/learn_lbl_click_here"
+            android:textAppearance="@style/LearnerFontSemiBold"
+            android:textColor="@color/learn_colorPrimary"
+            android:textSize="@dimen/learn_font_size_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/learn_lbl_to_Buy_full_version_of_Prokit"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:textColor="@color/learn_textColorPrimary"
+            android:textSize="@dimen/learn_font_size_medium" />
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learn_lbl_next"
+        android:paddingTop="@dimen/learn_spacing_middle"
+        android:paddingBottom="@dimen/learn_spacing_middle"
+        android:paddingStart="@dimen/learn_spacing_standard_new"
+        android:paddingEnd="@dimen/learn_spacing_standard_new"
+        style="@style/LearnerMaterialButtonStyle.Filled" />
+</LinearLayout>

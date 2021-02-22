@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/learn_ic_home"
+        android:title="@string/learn_lbl_home" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/learn_ic_search"
+        android:title="@string/learn_lbl_search" />
+
+    <item
+        android:id="@+id/navigation_favoritos"
+        android:icon="@drawable/learn_ic_like"
+        android:title="Favoritos" />
+
+    <!--
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/learn_ic_message_3"
+        android:title="@string/learn_lbl_cource" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/learn_ic_more"
+        android:title="@string/learn_lbl_more" />
+        -->
+
+</menu>

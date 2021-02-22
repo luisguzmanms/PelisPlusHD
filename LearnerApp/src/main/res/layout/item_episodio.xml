@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorEpisodio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/bg_recat_black"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivVisto"
+            android:layout_width="23dp"
+            android:layout_height="24dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/learn_ic_check_mark" />
+
+        <TextView
+            android:id="@+id/tvTituloEpisodio"
+            style="@style/LearnHeadingBig"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="Episodio"
+            android:textColor="@color/learn_textColorSecondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <ImageView
+            android:id="@+id/ivEditEpisodio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/learn_ic_back" />
+
+        <ImageView
+            android:id="@+id/ivReportarEp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/ic_report" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flContenedorCategoria"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bordetexto"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:padding="2dp"
+         android:visibility="gone" />
+
+     <TextView
+         android:id="@+id/tvCategoria"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:fontFamily="@font/poppins_regular"
+         android:gravity="center"
+         android:text="Categoria"
+         android:textColor="@color/learn_gradient_grey_1"
+         android:textSize="16sp" />
+
+</FrameLayout>

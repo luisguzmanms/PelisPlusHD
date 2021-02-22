@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "598031356064",
+    "firebase_url": "https://repelisplusapp.firebaseio.com",
+    "project_id": "repelisplusapp",
+    "storage_bucket": "repelisplusapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598031356064:android:7a52deb2127f2594ca39c5",
+        "android_client_info": {
+          "package_name": "com.lamesa.lofiradiopro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598031356064-a0rufb4ea1j4md1t4l4upqubed8klg5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2Z52SsoAEuHC-aIGia8j_Eig14Udwzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598031356064-a0rufb4ea1j4md1t4l4upqubed8klg5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598031356064:android:121871e074786627ca39c5",
+        "android_client_info": {
+          "package_name": "com.pelisplus.verseries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598031356064-ev4uljb2najl3u6adk715dsa5m052k6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pelisplus.verseries",
+            "certificate_hash": "cab2304c49fa4246cc0b65ce6dfcb66c71bbb17a"
+          }
+        },
+        {
+          "client_id": "598031356064-rv2h1p884tj5ed4v63l7rtpmjuq0rb5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pelisplus.verseries",
+            "certificate_hash": "47cca3679114ee5b4aa7128ae630dfb2758870f7"
+          }
+        },
+        {
+          "client_id": "598031356064-a0rufb4ea1j4md1t4l4upqubed8klg5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2Z52SsoAEuHC-aIGia8j_Eig14Udwzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598031356064-a0rufb4ea1j4md1t4l4upqubed8klg5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

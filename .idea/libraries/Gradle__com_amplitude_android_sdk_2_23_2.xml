@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amplitude:android-sdk:2.23.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amplitude/android-sdk/2.23.2/1b98c66d460d9f96950f10e868ee3209bcd821a/android-sdk-2.23.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amplitude/android-sdk/2.23.2/f5464ecae4e9b3700f9f6d76040ee31d5df01de8/android-sdk-2.23.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amplitude/android-sdk/2.23.2/53db22677b9ae157c5979d2d28285059bfd23efc/android-sdk-2.23.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

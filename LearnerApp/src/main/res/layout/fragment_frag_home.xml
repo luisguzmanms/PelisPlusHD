@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_50sdp"
+        >
+
+        <TextView
+            android:id="@+id/tvFeatured"
+            style="@style/LearnHeadingBig"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_large"
+            android:textStyle="bold"
+            android:text="@string/learn_lbl_featured" />
+
+        <TextView
+            android:id="@+id/tvViewFeatured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tvFeatured"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@id/tvFeatured"
+            android:textSize="@dimen/learn_font_size_medium"
+            android:textAllCaps="true"
+            android:textColor="@color/learn_colorPrimary"
+            android:textAppearance="@style/LearnerFontMedium"
+            android:layout_marginEnd="@dimen/learn_font_size_large"
+            android:text="@string/learn_lbl_see_all" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDestacado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/learn_spacing_control"
+            android:paddingEnd="@dimen/learn_spacing_control"
+            android:layout_below="@id/tvFeatured" />
+
+        <TextView
+            android:id="@+id/tvCategories"
+            style="@style/LearnHeadingBig"
+            android:layout_below="@id/rvDestacado"
+            android:layout_marginStart="@dimen/learn_spacing_standard_new"
+            android:layout_marginTop="@dimen/learn_spacing_standard_new"
+            android:textStyle="bold"
+            android:text="@string/learn_lbl_categories" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:layout_marginTop="@dimen/learn_spacing_standard_new"
+            android:paddingStart="@dimen/learn_spacing_standard_new"
+            android:paddingEnd="@dimen/learn_spacing_middle"
+            android:layout_below="@id/tvCategories" />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

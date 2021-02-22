@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/LearnerAppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@color/learn_white"
+            app:contentScrim="@color/learn_white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_gravity="center_horizontal">
+
+                    <com.iqonic.learnerapp.utils.LearnerCircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/learn_spacing_control_half" />
+
+                    <View
+                        android:id="@+id/viewStatus"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/learn_spacing_control"
+                        android:layout_marginTop="@dimen/learn_spacing_control"
+                        android:background="@drawable/learn_circle_dot" />
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    style="@style/LearnHeadingBig"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/learn_font_size_xlarge"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/learn_spacing_standard"
+                    android:textStyle="bold"
+                    android:text="@string/learn_lbl_marc_elliot" />
+
+                <TextView
+                    android:id="@+id/tvStartNewChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/learn_spacing_control_half"
+                    android:textSize="@dimen/learn_font_size_medium"
+                    android:textColor="@color/learn_textColorSecondary"
+                    android:textAppearance="@style/LearnerFontSemiBold"
+                    android:text="@string/learn_lbl_instructors" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/LearnerMaterialButtonStyle.Filled"
+                    app:strokeColor="@color/learn_colorPrimary"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/learn_spacing_large"
+                    android:paddingStart="@dimen/learn_spacing_large"
+                    android:paddingEnd="@dimen/learn_spacing_large"
+                    android:text="@string/learn_lbl_follow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/learn_spacing_standard_new"
+                    android:layout_marginTop="@dimen/learn_spacing_standard_new">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/LearnHeadingBig"
+                            android:textSize="@dimen/learn_font_size_large"
+                            android:textStyle="bold"
+                            android:text="7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/learn_font_size_medium"
+                            android:textColor="@color/learn_textColorSecondary"
+                            android:textAppearance="@style/LearnerFontSemiBold"
+                            android:text="@string/learn_lbl_courses" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/LearnHeadingBig"
+                            android:textSize="@dimen/learn_font_size_large"
+                            android:textStyle="bold"
+                            android:text="@string/learn_lbl_5_0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/learn_font_size_medium"
+                            android:textColor="@color/learn_textColorSecondary"
+                            android:textAppearance="@style/LearnerFontSemiBold"
+                            android:text="@string/learn_lbl_ratings" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/LearnHeadingBig"
+                            android:textSize="@dimen/learn_font_size_large"
+                            android:textStyle="bold"
+                            android:text="@string/learn_lbl_1_6k" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/learn_font_size_medium"
+                            android:textColor="@color/learn_textColorSecondary"
+                            android:textAppearance="@style/LearnerFontSemiBold"
+                            android:text="@string/learn_lbl_students" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/LearnerAppTheme.PopupOverlay" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/learn_white"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/learn_ic_back"
+                        android:padding="@dimen/learn_spacing_medium"
+                        />
+
+                    <ImageView
+                        android:id="@+id/ivMore"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/learn_ic_more"
+                        android:rotation="90"
+                        android:tint="@color/learn_colorPrimary"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/learn_spacing_medium"
+                        android:layout_marginEnd="@dimen/learn_spacing_control" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

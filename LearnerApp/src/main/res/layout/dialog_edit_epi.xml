@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/learn_black">
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/id_mainScroll_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_blank"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        tools:context=".OseanProfile">
+
+
+        <!-- main layout -->
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondo_blank"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/learn_spacing_middle"
+
+                android:layout_marginBottom="@dimen/learn_spacing_xxxlarge"
+                android:background="@color/fondo_blank"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/learn_spacing_middle"
+                    android:layout_marginTop="@dimen/learn_spacing_control">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/learn_shadoe_oscuro"
+                        android:padding="@dimen/_13sdp"
+                        android:src="@drawable/learn_ic_key"
+                        android:tint="@color/learn_green" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/learn_spacing_standard"
+                            android:layout_marginEnd="@dimen/learn_spacing_middle"
+                            android:drawableTint="@color/learn_textColorThird"
+                            android:gravity="center_vertical"
+                            android:text="Nombre episodio"
+                            android:textAppearance="@style/LearnerFontMedium"
+                            android:textColor="@color/learn_textColorPrimary"
+                            android:textSize="12sp" />
+
+                        <EditText
+                            android:id="@+id/etNombreEpisodio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/learn_spacing_standard"
+                            android:layout_marginEnd="@dimen/learn_spacing_middle"
+                            android:layout_weight="1"
+                            android:drawableEnd="@drawable/learn_ic_arrow_right"
+                            android:drawableTint="@color/learn_textColorThird"
+                            android:gravity="center_vertical"
+                            android:hint="Nombre episodio"
+                            android:padding="10dp"
+                            android:textAppearance="@style/LearnerFontMedium"
+                            android:textColor="@color/learn_mettal_grey"
+                            android:textColorHint="@color/edit_base_line_color"
+                            android:textSize="@dimen/learn_font_size_normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/learn_spacing_standard_new"
+                    android:background="@color/learn_gradient_grey_1" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:text="Links:"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textSize="12sp" />
+
+                <ListView
+                    android:id="@+id/lvUrls"
+                    style="@android:style/Widget.ListView"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp">
+
+                </ListView>
+
+
+                <EditText
+                    android:id="@+id/etAddLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/learn_spacing_standard"
+                    android:layout_marginEnd="@dimen/learn_spacing_middle"
+                    android:layout_weight="1"
+                    android:background="@drawable/learn_shadow_edittext_oscuro"
+                    android:drawableEnd="@drawable/learn_ic_arrow_right"
+                    android:drawableTint="@color/learn_textColorThird"
+                    android:gravity="center_vertical"
+                    android:hint="Agregar link:"
+                    android:padding="20dp"
+                    android:textAppearance="@style/LearnerFontMedium"
+                    android:textColor="@color/learn_textColorPrimary"
+                    android:textColorHint="@color/learn_mettal_grey"
+                    android:textSize="@dimen/learn_font_size_normal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEnviarCambios"
+                    style="@style/LearnerMaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:paddingStart="@dimen/learn_spacing_xlarge"
+                    android:paddingEnd="@dimen/learn_spacing_xlarge"
+                    android:text="Enviar cambios"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

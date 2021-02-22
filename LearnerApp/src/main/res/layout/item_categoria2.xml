@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flContenedorCategoria"
+    android:layout_width="@dimen/_55sdp"
+    android:layout_height="@dimen/_55sdp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@drawable/gradient6" />
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria3"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@color/cardview_shadow_start_color" />
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria5"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@color/cardview_shadow_start_color" />
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/ivCategoria4"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:src="@color/cardview_shadow_start_color" />
+
+     <TextView
+         android:id="@+id/tvCategoria"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:singleLine="true"
+         android:text="Categoria"
+         android:textAppearance="@style/LearnerFontMedium"
+         android:textColor="@color/learn_gradient_grey_1"
+         android:textSize="16sp" />
+
+</FrameLayout>

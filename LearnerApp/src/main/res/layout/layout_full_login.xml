@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/learn_black">
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:id="@+id/id_mainScroll_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/fondo_blancoazul"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        tools:context=".OseanProfile">
+
+
+        <!-- main layout -->
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/learn_spacing_standard_new"
+                android:layout_marginTop="@dimen/learn_spacing_standard_new"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/learn_ic_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivBack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical">
+
+                <EditText
+                    style="@style/LearnEditTextStyleRound"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="idFilm"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+
+
+                <EditText
+                    android:id="@+id/editText6"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Nombre"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Imagen"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Sipnosis"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Categoria"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Calidad"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Tipo"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Estado"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Año"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="Red"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    style="@style/LearnEditTextStyleRound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_recat_black"
+                    android:hint="FechaActualizado"
+                    android:textColorHint="@color/learn_gradient_grey_2" />
+                />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEnter"
+                    style="@style/LearnerMaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:paddingStart="@dimen/learn_spacing_xlarge"
+                    android:paddingEnd="@dimen/learn_spacing_xlarge"
+                    android:text="ENVIAR"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

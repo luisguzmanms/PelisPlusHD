@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlFilm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardviewFilm"
+        android:layout_width="110dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/fondo_black2"
+        app:cardElevation="10dp">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/Wrap"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/learn_colorPrimary"
+            app:SpinKit_Style="MultiplePulseRing"></com.github.ybq.android.spinkit.SpinKitView>
+
+        <ImageView
+            android:id="@+id/ivImagenPrincipalFilm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            app:cardBackgroundColor="@color/learn_colorPrimary"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <TextView
+                android:id="@+id/tvCalidadFilm"
+                style="@style/TabTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/tvAll"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            app:cardBackgroundColor="@color/learn_textColorGrey"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <TextView
+                android:id="@+id/tvTipoFilm"
+                style="@style/TabTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textColor="@color/learn_colorPrimary"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@id/tvAll"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvTituloFilm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardviewFilm"
+        android:layout_alignEnd="@id/cardviewFilm"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textAppearance="@style/LearnerFontMedium"
+        android:textColor="@color/learn_textColorThird"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="Business management" />
+
+
+</RelativeLayout>

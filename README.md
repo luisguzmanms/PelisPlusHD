@@ -37,10 +37,10 @@
 PelisPlusHD es una aplicación para dispositivos Android gracias a la cual podrás disfrutar de películas y series sin límites. <br>
 Disfruta de todos tus contenidos favoritos de forma gratuita eligiendo la categoría que más te guste.
 
-Disponible para Android.
+**Disponible para Android.**
 
-NOTA: _Esta aplicación se desarrolló en el año 2020 con la intención de poner en practica diferentes tecnologias y uso de Android Studio la cual le faltan mejoras en la estructura del codigo y buenas practicas, adicional esta app no esta siendo monetizada y no se encuentra en GooglePlay debido a politicas de uso ya que es una app con intenciones totalmente educativas.
-Para su descarga gratuita visitar el sitio web https://repelisplusapp.web.app._
+**NOTA: _Esta aplicación se desarrolló en el año 2020 con la intención de poner en practica diferentes tecnologias y uso de Android Studio la cual le faltan mejoras en la estructura del codigo y buenas practicas, adicional esta app no esta siendo monetizada y no se encuentra en GooglePlay debido a politicas de uso ya que es una app con intenciones totalmente educativas.
+Para su descarga gratuita visitar el sitio web https://repelisplusapp.web.app._**
 
 
 <p>
